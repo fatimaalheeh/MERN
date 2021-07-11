@@ -17,6 +17,7 @@ class Ninja{
         this.health+=10;
     }
 
+
 }
 
 const ninja1 = new Ninja("Hyabusa",10);
