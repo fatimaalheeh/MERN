@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-
-
+// import React from 'reactr'
 class Header extends React.Component {
     
     constructor(props) {
