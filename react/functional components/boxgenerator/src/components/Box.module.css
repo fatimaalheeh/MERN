@@ -13,9 +13,11 @@ form{
 .box {
     width: 200px;
     height: 200px;
-    margin: 2px;
-    background-color: gray;
-    border: 1px solid black;
+    margin: 15px;
+    background-color: white;
+    border: 3px solid whitesmoke;
+    box-shadow: 15px 15px 15px   darkgrey;
+    ;
     animation: slide-in 1s
 }
 

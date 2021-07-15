@@ -7,7 +7,9 @@ import ShowBox from './components/boxes';
 function App() {
 
   const [formInfo, setFormInfo] = useState({
-    boxColor: ""
+    boxColor: "",
+    boxHeight: "",
+    boxWidth: "",
 })
 const [allBoxes, setAllBoxes ] = useState([])
 
@@ -24,7 +26,10 @@ const submitHandler = (e)=>{
   setAllBoxes([...allBoxes, formInfo])
   console.log(allBoxes)
   setFormInfo({
-    boxColor: ""
+    boxColor: "",
+    boxHeight: "",
+    boxWidth: "",
+
   })
 }
 
