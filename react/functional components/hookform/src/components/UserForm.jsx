@@ -110,6 +110,7 @@ const UserForm = (props) => {
                 <input name="lastName" type="text" onChange={handlelastName} />
                     {
                         lastNameError ?
+                        //style={{color:'crimson'}} : CSS as props or use className and modify in the app.css : .example{color:green;}
                         <p style={{color:'crimson'}}>{ lastNameError }</p> :''
                     }
             </div>
@@ -122,7 +123,7 @@ const UserForm = (props) => {
                     }
             </div>
             <div>
-                <label>Password: </label>
+                <label >Password: </label>
                 <input name="password" type="text" onChange={handlePassword } />
                 {
                         passwordError ?

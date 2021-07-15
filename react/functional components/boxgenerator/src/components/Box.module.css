@@ -1,0 +1,22 @@
+form{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+
+.box {
+    width: 200px;
+    height: 200px;
+    margin: 2px;
+    background-color: gray;
+    border: 1px solid black;
+    animation: slide-in 1s
+}
+
+
