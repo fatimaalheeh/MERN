@@ -4,7 +4,7 @@ import styles from './Box.module.css';
 
 const Generator = (props) => {
    
-    const {submitHandler, changeHandler, formInfo} = props
+    const {submitHandler, changeHandler, formInfo} = props //for passing
 
 
 
@@ -12,9 +12,9 @@ const Generator = (props) => {
     return (
         
         <div>
-             <form onSubmit = {submitHandler} className = "col-6 mx-auto">
+             <form onSubmit = {submitHandler} className = "">
                 <div className="form-group">
-                    <label htmlFor="">Color </label>
+                    <label htmlFor="">Color </label>    
                     <input className="form-control" type="text" name="boxColor" id="" onChange= {changeHandler} value = {formInfo.boxColor}/>
                     <label htmlFor="">Height </label>
                     <input className="form-control" type="text" name="boxHeight" id="" onChange= {changeHandler} value = {formInfo.boxHeight}/>

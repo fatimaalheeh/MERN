@@ -10,27 +10,26 @@ function App() {
     boxColor: "",
     boxHeight: "",
     boxWidth: "",
-})
-const [allBoxes, setAllBoxes ] = useState([])
+})//default
+const [allBoxes, setAllBoxes ] = useState([]);//list
 
-const changeHandler = (e)=>{
+const changeHandler = (e)=>{//for forms
   setFormInfo({
       ...formInfo,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value//value from input field, see form hooks
   })
 
 }
-const submitHandler = (e)=>{
-  e.preventDefault()
+const submitHandler = (e)=>{//on submit
+  e.preventDefault()//prevent bubbling
 
-  setAllBoxes([...allBoxes, formInfo])
-  console.log(allBoxes)
+  setAllBoxes([...allBoxes, formInfo])//spread pass formInfo
   setFormInfo({
     boxColor: "",
     boxHeight: "",
     boxWidth: "",
 
-  })
+  })//set to new values
 }
 
   return (
