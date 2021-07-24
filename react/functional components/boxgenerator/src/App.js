@@ -10,10 +10,12 @@ function App() {
     boxColor: "",
     boxHeight: "",
     boxWidth: "",
-})//default
+
+})//    default values of the variables
+
 const [allBoxes, setAllBoxes ] = useState([]);//list
 
-const changeHandler = (e)=>{//for forms
+const changeHandler = (e)=>{ //for forms
   setFormInfo({
       ...formInfo,
       [e.target.name]: e.target.value//value from input field, see form hooks
@@ -21,7 +23,7 @@ const changeHandler = (e)=>{//for forms
 
 }
 const submitHandler = (e)=>{//on submit
-  e.preventDefault()//prevent bubbling
+  e.preventDefault()//prevent bubbling//bubbling phase?
 
   setAllBoxes([...allBoxes, formInfo])//spread pass formInfo
   setFormInfo({
