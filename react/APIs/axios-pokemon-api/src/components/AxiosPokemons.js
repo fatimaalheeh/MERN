@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 const AxiosPokemons = () => {
     const [Axios, setAxios] = useState([]);
-    const fetchAxios = () => {
+    const fetchAxios = () => {//try it with useEffect '.../id'   useEffect ....(=>,[id]) to rerender on every change on the id
         axios.get(
             'https://pokeapi.co/api/v2/pokemon?limit=807'
             )
